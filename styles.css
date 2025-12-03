@@ -18,7 +18,7 @@ a {
     color: var(--accent-darker);
 }
 
-.lighter-bg > * {
+.lighter-bg *  {
   color: rgb(0, 0, 0);
 }
 
