@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
       content="Minecraft, mcpc, addon, bedrock, addons, maker, mcreator, bedrock addons, bedrockr, bedrockR, bedrock maker, bedrockmaker"
     />
 
     <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-    <script src="latest-loader.js"></script>
+    <script defer src="latest-loader.js"></script>
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -51,7 +52,16 @@
         background-size: cover;
       "
     >
-      <img class="no-shadow" src="img/BrandingFullWShadow.png" height="50" />
+      <a href="/">
+        <img
+          class="no-shadow"
+          src="img/BrandingFullWShadow.png"
+          alt="bedrockR Icon"
+          height="50"
+      /></a>
+      <div>
+        
+      </div>
     </header>
     <div
       class="section-div"
@@ -72,6 +82,7 @@
           display: block;
         "
         src="img/BrandingFullWShadow.png"
+        alt="bedrockR Icon"
       />
       <h2 style="text-align: center">
         <i
@@ -115,7 +126,7 @@
         />
       </div>
     </div>
-    <div class="section-div lighter-bg" style="background-color: #ffffff">
+    <div class="section-div" style="background-color: #1c1c1c">
       <h1 class="centered" style="margin-bottom: 1rem">Download bedrockR</h1>
       <p class="centered">
         bedrockR is avalible for Windows 10/11, Linux (Debian), & Chromebook (<a
@@ -123,10 +134,20 @@
           >untested</a
         >)
       </p>
-      <div style="border: gray dotted; padding: 2rem">
-        <h3>Latest Release</h3>
-        <h2>a1.0</h2>
-        <div id="latest-markdown-body"></div>
+      <div style="display: flex">
+        <div style="margin: auto; max-width: 70%">
+          <h3>Latest Release</h3>
+          <div style="border: gray dotted; padding: 2rem">
+            <h1><i id="latest-version-tag"></i></h1>
+            <div id="latest-markdown-body"></div>
+            <button
+              style="width: -webkit-fill-available; height: 5rem"
+              onclick="location.href = '/download?release=latest'"
+            >
+              Download
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -4,8 +4,8 @@
 }
 
 :root {
-    --accent: #4cff00;
-    --accent-darker: #37b601;
+  --accent: #4cff00;
+  --accent-darker: #37b601;
 }
 
 * {
@@ -14,13 +14,11 @@
   color: white;
 }
 
-a {
-    color: var(--accent-darker);
+/*
+.darker-bg * {
+  color: rgb(255, 255, 255);
 }
-
-.lighter-bg *  {
-  color: rgb(0, 0, 0);
-}
+*/
 
 .section-div {
   padding: 3rem 1rem;
@@ -41,11 +39,32 @@ a {
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 img {
   border-radius: 6px;
   filter: drop-shadow(#00000050 8px 8px 2px)
     drop-shadow(#00000050 -1px -1px 2px);
+}
+
+a {
+  color: var(--accent-darker) !important;
+}
+
+button {
+  background-color: #333333;
+  border: 4px solid #717171;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  border: 4px solid var(--accent);
 }
