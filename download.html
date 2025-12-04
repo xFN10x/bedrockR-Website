@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Minecraft, mcpc, addon, bedrock, addons, maker, mcreator, bedrock addons, bedrockr, bedrockR, bedrock maker, bedrockmaker"
+    />
+
+    <script defer src="download.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Primary Meta Tags -->
+    <title>bedrockR - Addons made easy</title>
+    <meta name="title" content="Download bedrockR" />
+    <meta name="description" content="Download bedrockR today!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bedrockr.xplate.dev" />
+    <meta property="og:title" content="bedrockR Addon Creation Tool" />
+    <meta property="og:description" content="Download bedrockR today!" />
+    <meta property="og:image" content="" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bedrockr.xplate.dev" />
+    <meta property="twitter:title" content="bedrockR Addon Creation Tool" />
+    <meta property="twitter:description" content="Download bedrockR today!" />
+    <meta property="twitter:image" content="/img/BrandingWBG.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+  </head>
+  <body>
+    <header
+      style="
+        background: url(img/BG.png);
+        min-height: 1.2rem;
+        padding: 0.6rem;
+        display: flex;
+        background-size: cover;
+      "
+    >
+      <a href="/">
+        <img
+          class="no-shadow"
+          src="img/BrandingFullWShadow.png"
+          alt="bedrockR Icon"
+          height="50"
+      /></a>
+      <p
+        style="
+          font-size: 20px;
+          margin: 0;
+          margin-left: auto;
+          text-align: right;
+          margin-top: 20px;
+        "
+      >
+        <a href="/">Home</a><a href="/download">Download</a
+        ><a href="https://github.com/xFN10x/bedrockR">Github</a>
+      </p>
+      <div></div>
+    </header>
+    <div class="section-div">
+      <h1>Download bedrockR <subtle id="version-text">a1.5</subtle></h1>
+      <h3>Choose your platform</h3>
+      <div class="dual-div">
+        <div class="section-div" style="background-color: rgb(36, 36, 49)">
+          <h2>Windows</h2>
+          <p>
+            Windows builds include a portable EXE (contained in a zip archive)
+            that requires no installation, and a MSI installer for more regular
+            use.
+            <br />
+            <br />
+            <i>Windows builds are only for 64 bit systems.</i>
+          </p>
+          <button id="msi-button">Download MSI</button>
+          <button id="win-port-button">Download Portable</button>
+        </div>
+        <div class="section-div" style="background-color: rgb(52, 31, 31)">
+          <h2>
+            Linux (Debian/<a
+              href="https://github.com/xFN10x/bedrockR/discussions/34"
+              >Chromebook</a
+            >)
+          </h2>
+          <p>
+            Linux builds are available for Debian so far, thus being installable
+            on Chromebook. These builds include a portable version, (run with
+            <code>./bedrockR</code>,) and a DEB installer.
+            <br />
+            <br />
+            <i>Linux builds are only for ARM64, and AMD64 systems.</i>
+          </p>
+          <fieldset>
+            <legend>ARM64</legend>
+            <button id="deb-arm-button">Download DEB</button>
+            <button id="port-arm-button">Download Portable</button>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>AMD64</legend>
+            <button id="deb-amd-button">Download DEB</button>
+            <button id="port-amd-button">Download Portable</button>
+          </fieldset>
+        </div>
+      </div>
+      <div class="section-div" style="background-color: rgb(52, 52, 31)">
+        <h2>Universal</h2>
+        <p>
+          Universal builds can be run on any device that can run Java 25.
+          Universal builds are (uber-)JAR files that can be run with a
+          installation of Java 25 (bedrockR does NOT support other versions of
+          java.)
+          <br />
+          <br />
+          <i
+            >If you do not have Java 25 installed, please look
+            <a
+              href="https://learn.microsoft.com/en-ca/java/openjdk/download#openjdk-25"
+              >here</a
+            ></i
+          >
+        </p>
+        <button id="jar-button">Download JAR</button>
+      </div>
+      <br />
+      <i
+        >Can't download? View the
+        <a href="" id="on-gtihub-anchor">release on github</a></i
+      >
+    </div>
+  </body>
+</html>

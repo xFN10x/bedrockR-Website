@@ -2,10 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
       content="Minecraft, mcpc, addon, bedrock, addons, maker, mcreator, bedrock addons, bedrockr, bedrockR, bedrock maker, bedrockmaker"
     />
+
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script defer src="latest-loader.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Primary Meta Tags -->
     <title>bedrockR - Addons made easy</title>
@@ -36,14 +42,135 @@
       property="twitter:description"
       content="A Minecraft Bedrock GUI-Based Addon maker, for Windows, Linux, and Chromebook."
     />
-    <meta
-      property="twitter:image"
-      content="/img/BrandingWBG.png"
-    />
+    <meta property="twitter:image" content="/img/BrandingWBG.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
   </head>
-  <body>
-    hello world
+  <body style="margin: 0">
+    <header
+      style="
+        background: url(img/BG.png);
+        min-height: 1.2rem;
+        padding: 0.6rem;
+        display: flex;
+        background-size: cover;
+      "
+    >
+      <a href="/">
+        <img
+          class="no-shadow"
+          src="img/BrandingFullWShadow.png"
+          alt="bedrockR Icon"
+          height="50"
+      /></a>
+      <p
+        style="
+          font-size: 20px;
+          margin: 0;
+          margin-left: auto;
+          text-align: right;
+          margin-top: 20px;
+        "
+      >
+        <a
+          href="/"
+          >Home</a
+        ><a
+          href="/download"
+          >Download</a
+        ><a
+          href="https://github.com/xFN10x/bedrockR"
+          >Github</a
+        >
+      </p>
+      <div></div>
+    </header>
+    <div
+      class="section-div"
+      style="
+        background-color: gray;
+        background-image: url(img/BG.png);
+        background-size: cover;
+        background-blend-mode: multiply;
+      "
+    >
+      <img
+        class="no-shadow"
+        style="
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: center;
+          width: 50%;
+          display: block;
+        "
+        src="img/BrandingFullWShadow.png"
+        alt="bedrockR Icon"
+      />
+      <h2 style="text-align: center">
+        <i
+          >A Minecraft Bedrock GUI-Based Addon maker, for Windows, Linux, and
+          Chromebook.</i
+        >
+      </h2>
+      <div class="example-div">
+        <img src="img/launchpage.png" alt="The bedrockR Launch Page" />
+        <div style="width: 100%"></div>
+        <img src="img/newaddon.png" alt="The bedrockR New Addon Page" />
+      </div>
+    </div>
+    <div class="section-div" style="background-color: #202020">
+      <div style="display: flex">
+        <div>
+          <h1>About bedrockR</h1>
+          <p style="max-width: 30rem">
+            Minecraft Bedrock Addons can be confusing, tedious, and annoying.
+            Coupled with Microsoft & Mojang's constant depercating, and
+            changing, some addons can be bad. bedrockR is what I'm hoping can
+            eliminate those challenges with a useful user interface, and regular
+            updates.
+            <br />
+            <br />
+            bedrockR is heavily inspired by MCreator, and how its bedrock
+            building is very neglected; being out of date, and lacking many
+            features.
+            <br />
+            <br />
+            bedrockR's goal is to become what MCreator couldn't do, and be a
+            fully featured bedrock addon maker, with many elements that most
+            people probably dont know about.
+          </p>
+        </div>
+        <img
+          style="margin: auto"
+          src="img/elementscreen.png"
+          alt="bedrockR's Workspace screen."
+          height="350"
+        />
+      </div>
+    </div>
+    <div class="section-div">
+      <h1 class="centered" style="margin-bottom: 1rem">Download bedrockR</h1>
+      <p class="centered">
+        bedrockR is avalible for Windows 10/11, Linux (Debian), & Chromebook (<a
+          href="https://github.com/xFN10x/bedrockR/discussions/34"
+          >untested</a
+        >)
+      </p>
+      <div style="display: flex">
+        <div style="margin: auto; max-width: 70%">
+          <h3>Latest Release</h3>
+          <div style="border: gray dotted; padding: 2rem">
+            <h1><i id="latest-version-tag"></i></h1>
+            <div id="latest-markdown-body"></div>
+            <button
+              style="width: -webkit-fill-available; height: 5rem"
+              onclick="location.href = '/download'"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
