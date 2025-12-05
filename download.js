@@ -77,7 +77,7 @@ fetch("https://api.github.com/repos/xFN10x/bedrockR/releases")
                         msi_Download_Button.onclick = (ev) => {
                             location.href = asset.browser_download_url
                         }
-                    } else if (asset.name.endsWith("jar.zip")) {
+                    } else if (asset.name.endsWith("jar.zip") || asset.name.endsWith("jar")) {
                         // @ts-ignore
                         jar_Button.onclick = (ev) => {
                             location.href = asset.browser_download_url
