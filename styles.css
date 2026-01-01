@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url(font/font.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url(font/Monocraft.otf) format("opentype");
+}
+
+body {
+  background-color: #1c1c1c;
+  margin: 0;
+}
+
+:root {
+  --accent: #4cff00;
+  --accent-darker: #37b601;
+}
+
+* {
+  font-family: "Minecraft", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+/*
+.darker-bg * {
+  color: rgb(255, 255, 255);
+}
+*/
+
+code {
+  background-color: #313131;
+  padding: 2px;
+  font-family: "Monocraft";
+}
+
+.dual-div {
+  display: flex;
+}
+
+.dual-div > div {
+  flex: 50%;
+}
+
+subtle {
+  color: #313131;
+}
+
+.section-div {
+  padding: 3rem 1rem;
+}
+
+.example-div {
+  display: flex;
+  justify-content: center;
+}
+
+.example-div > img {
+  width: 40%;
+  margin: auto;
+}
+
+.no-shadow {
+  filter: unset;
+}
+
+.centered {
+  text-align: center;
+}
+
+img {
+  border-radius: 6px;
+  filter: drop-shadow(#00000050 8px 8px 2px)
+    drop-shadow(#00000050 -1px -1px 2px);
+}
+
+a {
+  color: var(--accent-darker) !important;
+}
+
+header > * > a {
+  margin: 0 1rem;
+  color: #1c5d00 !important;
+}
+
+button {
+  background-color: #333333;
+  border: 4px solid #717171;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+details {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px #37b601 dotted;
+}
+
+button:disabled {
+  color: #9c9c9c;
+  cursor: not-allowed !important;
+}
+
+button:enabled:hover {
+  border: 4px solid var(--accent);
+}
+
+#older-ver-div {
+  text-align: center
+}
+
+#older-ver-div > * {
+  text-align: initial
+}
