@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="darkreader-lock">
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -57,39 +58,12 @@
     <meta property="twitter:image" content="/img/BrandingWBG.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
 
   <body style="margin: 0">
-    <header
-      style="
-        background: url(img/BG.png);
-        min-height: 1.2rem;
-        padding: 0.6rem;
-        display: flex;
-        background-size: cover;
-      "
-    >
-      <a href="/">
-        <img
-          class="no-shadow"
-          src="img/BrandingFullWShadow.png"
-          alt="bedrockR Icon"
-          height="50"
-      /></a>
-      <p
-        style="
-          font-size: 20px;
-          margin: 0;
-          margin-left: auto;
-          text-align: right;
-          margin-top: 20px;
-        "
-      >
-        <a href="/">Home</a><a href="/download">Download</a
-        ><a href="https://github.com/xFN10x/bedrockR">Github</a>
-      </p>
-      <div></div>
-    </header>
+    <header w3-include-html="header.html"></header>
+
     <div
       class="section-div"
       style="
@@ -157,8 +131,6 @@
       <h1 class="centered" style="margin-bottom: 1rem">Download bedrockR</h1>
       <p class="centered">
         bedrockR is available for Windows 10/11, Linux (Debian), & Chromebook
-        (<a href="https://github.com/xFN10x/bedrockR/discussions/34">untested</a
-        >)
       </p>
       <div style="display: flex">
         <div style="margin: auto; max-width: 70%">
@@ -182,4 +154,5 @@
       </div>
     </div>
   </body>
+    <script>w3.includeHTML()</script>
 </html>
