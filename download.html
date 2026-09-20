@@ -1,9 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <meta name="darkreader-lock">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JRJL3CFYWK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JRJL3CFYWK");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <meta
       name="keywords"
       content="Minecraft, mcpc, addon, bedrock, addons, maker, mcreator, bedrock addons, bedrockr, bedrockR, bedrock maker, bedrockmaker"
@@ -33,38 +49,11 @@
     <meta property="twitter:image" content="/img/BrandingWBG.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
+
   <body>
-    <header
-      style="
-        background: url(img/BG.png);
-        min-height: 1.2rem;
-        padding: 0.6rem;
-        display: flex;
-        background-size: cover;
-      "
-    >
-      <a href="/">
-        <img
-          class="no-shadow"
-          src="img/BrandingFullWShadow.png"
-          alt="bedrockR Icon"
-          height="50"
-      /></a>
-      <p
-        style="
-          font-size: 20px;
-          margin: 0;
-          margin-left: auto;
-          text-align: right;
-          margin-top: 20px;
-        "
-      >
-        <a href="/">Home</a><a href="/download">Download</a
-        ><a href="https://github.com/xFN10x/bedrockR">Github</a>
-      </p>
-      <div></div>
-    </header>
+    <header w3-include-html="header.html"></header>
     <div class="section-div">
       <h1>Download bedrockR <subtle id="version-text">a1.5</subtle></h1>
       <h3>Choose your platform</h3>
@@ -84,10 +73,7 @@
         </div>
         <div class="section-div" style="background-color: rgb(52, 31, 31)">
           <h2>
-            Linux (Debian/<a
-              href="https://github.com/xFN10x/bedrockR/discussions/34"
-              >Chromebook</a
-            >)
+            Linux (Debian/Chromebook)
           </h2>
           <p>
             Linux builds are available for Debian so far, thus being installable
@@ -136,4 +122,7 @@
       >
     </div>
   </body>
+  <script>
+    w3.includeHTML();
+  </script>
 </html>
